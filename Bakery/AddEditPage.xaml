@@ -1,0 +1,24 @@
+﻿<Page x:Class="Bakery.AddEditPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Bakery"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddEditPage">
+
+    <Grid>
+        <TextBox Text="{Binding product}" HorizontalAlignment="Left" Margin="208,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="229" Height="42" MaxLength="50"/>
+        <TextBox Text="{Binding amount}" HorizontalAlignment="Left" Margin="208,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="229" Height="42" MaxLength="50"/>
+        <TextBox Text="{Binding price}" HorizontalAlignment="Left" Margin="208,247,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="229" Height="42" MaxLength="50"/>
+        <Button Content="Сохранить
+                " HorizontalAlignment="Left" Margin="493,128,0,0" VerticalAlignment="Top" Width="125" Click="Button_Click"/>
+        <ComboBox x:Name="cb" SelectedItem="{Binding seller}" DisplayMemberPath="name"  HorizontalAlignment="Left" Margin="208,310,0,0" VerticalAlignment="Top" Width="177" Height="35"/>
+        <TextBlock HorizontalAlignment="Left" Margin="37,132,0,0" TextWrapping="Wrap" Text="Товар" VerticalAlignment="Top" Height="22" Width="127"/>
+        <TextBlock HorizontalAlignment="Left" Margin="37,183,0,0" TextWrapping="Wrap" Text="Количество" VerticalAlignment="Top" Width="116"/>
+        <TextBlock HorizontalAlignment="Left" Margin="37,247,0,0" TextWrapping="Wrap" Text="Цена" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Left" Margin="45,320,0,0" TextWrapping="Wrap" Text="Продавец" VerticalAlignment="Top"/>
+
+    </Grid>
+</Page>

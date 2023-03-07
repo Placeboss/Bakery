@@ -1,0 +1,18 @@
+﻿<Page x:Class="Bakery.RegistPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Bakery"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RegistPage">
+
+    <Grid>
+        <TextBox x:Name="LoginTB" HorizontalAlignment="Center" Margin="0,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="446" Height="54"/>
+        <TextBox x:Name="PassTB" HorizontalAlignment="Center" Margin="0,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="446" Height="54"/>
+        <TextBox x:Name="NameTB" HorizontalAlignment="Center" Margin="0,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="446" Height="54"/>
+        <Button Content="Регистрация" HorizontalAlignment="Left" Margin="339,364,0,0" VerticalAlignment="Top" Height="34" Width="155" Click="Button_Click"/>
+
+    </Grid>
+</Page>
